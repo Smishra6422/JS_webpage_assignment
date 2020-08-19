@@ -11,13 +11,13 @@ body {
 }
 
 .card {
-  width: 30%;
+  width: 27%;
   height: 25rem;
   margin-bottom: 1.7rem;
 }
 
 .card > img {
-  height: 86%;
+  height: 85%;
 }
 
 #buttons {

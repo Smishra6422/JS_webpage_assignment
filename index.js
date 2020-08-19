@@ -157,6 +157,7 @@ function putImages(category) {
 putImages(cardDetail.shirts);
 
 buttons.addEventListener("click", (e) => {
+  serachBar.value = "";
   let categoryName = e.target.dataset.categoryValue;
   if (categoryName) {
     imageContainer.innerHTML = "";
@@ -169,13 +170,13 @@ serachBar.addEventListener("keyup", (e) => {
   if (e.target.value.length === 1) {
     document.body.style.background = "#2C3335";
   } else if (e.target.value.length % 2 === 0) {
-    document.body.style.background = "#192A56";
+    document.body.style.backgroundImage =
+      "linear-gradient(45deg,#7a1111,#4b134f)";
   } else if (e.target.value.length % 3 === 0) {
-    document.body.style.background = "#4C4B4B";
-  } else if (e.target.value.length % 5 === 0) {
-    document.body.style.background = "#01CBC6";
+    document.body.style.backgroundImage =
+      "linear-gradient(45deg,#4b134f,#7a1111)";
   } else {
-    document.body.style.background = "#1287A5";
+    document.body.style.background = "#111";
   }
 
   const searchInputValue = e.target.value.toLowerCase();
